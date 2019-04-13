@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Indie+Flower|Roboto" rel="stylesheet">
+    
+    <title>Holiday Locations</title>
+    
+    <style>
+        
+        body {
+            background-image: url(atmosphere.jpg);
+            font-family: 'Indie Flower', cursive;
+            font-size: 14pt;
+        }
+        
+        .nav_bar {
+            position: relative;
+            height: 40px;
+            font-family: inherit;
+            background-color: rgba(133, 138, 147, 0.7);
+            padding: 5px;            
+        }
+        
+        .nav_button_register, .nav_button_home {
+            width: 100px;
+            height: 30px;
+            font-family: inherit;
+            font-size: 14pt;
+            border-style: none;
+            background-color: white;
+            font-family: 'Roboto', sans-serif;
+        }
+        
+        .nav_button_register:hover, .nav_button_home:hover {
+            background-color: lightgray;
+        }
+        
+        .nav_button_home {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+        }
+        
+        .nav_button_register {
+            position: absolute;
+            top: 10px;
+            left: 120px;
+        }
+        
+        .location_area {
+            
+        }
+        
+        .location {
+            position: relative;
+            display: inline-block;
+            background-color: rgba(102, 148, 232, 0.7);
+            border-radius: 5px;
+            color: white;
+            margin: 15px;
+            height: 425px;
+            width: 30%;
+            min-width: 250px;
+        }
+        
+        .loc_head {
+            text-align: center;
+            font-size: 18pt;
+            padding: 5px;
+        }
+        
+        .loc_image {
+            position: absolute;
+            /*background-color: rgba(102, 148, 232);*/
+            border-style: solid;
+            border-width: medium;
+            border-color: white;
+            width: 90%;
+            height: 150px;
+            top: 10%;
+            left: 50%;
+            margin-right: -50%;
+            transform: translateX(-50%);   
+        }
+        
+        .loc_text {
+            font-size: 14pt;
+            position: absolute;
+            top: 50%;
+            width: 100%;
+        }
+        
+        .loc_button {
+            position: absolute;
+            top: 87%;
+            left: 50%;
+            margin-right: -50%;
+            transform: translateX(-50%);
+        }
+        
+        .butt {
+            padding: 8px;
+            border-style: none;
+            background-color: darkblue;
+            color: white;
+            font-family: inherit;
+            font-size: 14pt;
+        }
+        
+        .butt:hover {
+            background-color: rgba(6, 80, 216);
+        }
+        
+    </style>
+</head>
+<body>
+    <div class=nav_bar>
+        <a href="register.html"><button class="nav_button_register">Register</button></a>
+        <a href="index.html"><button class="nav_button_home">Home</button></a>
+    </div>
+    
+    <div class="location_area">
+        <div class="location">
+            <div class="loc_head">Austria</div>
+            <div class="loc_image"><img src="austria.jpg" style="width: 100%; height: 100%;"></div>
+            <div class="loc_text">
+                <ul>
+                    <li>Amazing walking region</li>
+                    <li>Superb local food</li>
+                    <li>Great lakes</li>
+                    <li>Amazing cities</li>
+                </ul>
+            </div>
+            <div class="loc_button"><a href="austria.html"><button class="butt">Find out more</button></a></div>
+        </div>
+        
+        <div class="location">
+            <div class="loc_head">Croatia</div>
+            <div class="loc_image"><img src="croatia.jpg" style="width: 100%; height: 100%;"></div>
+            <div class="loc_text">
+                <ul>
+                    <li>Beautiful mountainous scenery</li>
+                    <li>Historic cities</li>
+                    <li>Adriatic coastline</li>
+                </ul>
+            </div>
+            <div class="loc_button"><button class="butt">Find out more</button></div>
+        </div>
+        
+        <div class="location">
+            <div class="loc_head">Portugal</div>
+            <div class="loc_image"><img src="portugal.jpg" style="width: 100%; height: 100%;"></div>
+            <div class="loc_text">
+                <ul>
+                    <li>Incredible coastline</li>
+                    <li>Local crafts</li>
+                    <li>Fantastic food</li>
+                    <li>Consistent sunny weather</li>
+                </ul>
+            </div>
+            <div class="loc_button"><button class="butt">Find out more</button></div>
+        </div>
+        
+        <div class="location">
+            <div class="loc_head">United States</div>
+            <div class="loc_image"><img src="newyork.jpg" style="width: 100%; height: 100%;"></div>
+            <div class="loc_text">
+                <ul>
+                    <li>Bountiful cuisine</li>
+                    <li>World beating culture</li>
+                    <li>Interesting presidents</li>
+                    <li>50+ states to visit</li>
+                </ul>
+            </div>
+            <div class="loc_button"><button class="butt">Find out more</button></div>
+        </div>
+    </div>
+	
+</body>
+</html>

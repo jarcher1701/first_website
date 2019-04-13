@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+	<title>Register</title>
+    
+    <style>
+        
+        body {
+            background-image: url(lakeside.jpeg);
+            background-position: top;
+            background-size: cover;
+            background-repeat: no-repeat;
+            font-family: monospace;
+            font-size: 12pt;
+        }
+        
+        .register_area {
+            position: absolute;
+            width: 30%;
+            min-width: 400px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border-radius: 8px;
+            padding: 10px;
+            background-color: white;
+            box-shadow: 5px 5px 10px;
+            font-size: 12pt;
+        }
+        
+        .formDesc {
+            display: inline-block;
+            min-width: 100px;
+            width: 150px;
+            padding-left: 10px;
+            margin-right: 15px;
+            padding-bottom: 5px;
+            font-size: 12pt;
+        }
+        
+        .formInput {
+            display: inline-block;
+            min-width: 100px;
+            padding-bottom: 5px;
+        }
+        
+        .selections {
+            margin: 10px;
+            padding: 10px;
+            border-style: solid;
+            border-width: thin;
+            border-color: lightgray;
+            min-width: 200px;
+            max-width: 400px;
+            font-size: 12pt;
+        }
+        
+        .choice {
+            display: inline-block;
+            padding-left: 30px;
+            padding-right: 15px;
+            font-size: 12pt;
+        }
+        
+        .button_area {
+            text-align: center;
+        }
+        
+        .button {
+            width: 100px;
+            border-style: none;
+            background-color: crimson;
+            color: white;
+            padding: 8px;
+            font-family: monospace;
+            font-size: 12pt;
+        }
+        
+        .button:hover {
+            background-color: firebrick;
+        }
+    
+    </style>
+</head>
+<body>
+	<div class="register_area">
+        <h2 style="padding-left: 10px;">Please enter your details below:</h2>
+        <form>
+            <div class="formDesc">First Name: </div><div class="formInput"><input type="text" name="firstname"></div><br>
+            <div class="formDesc">Last Name: </div><div class="formInput"><input type="text" name="lastname"></div><br>
+            <div class="formDesc">Date of birth: </div><div class="formInput"><input type="date" name="date"></div><br>
+            <div class="formDesc">E-mail: </div><div class="formInput"><input type="email" name="email"></div><br>
+            <div class="selections">
+                <strong>Gender:</strong><br>
+                <div class="choice"><input type="radio" name="gender" value="male"></div>Male<br>
+                <div class="choice"><input type="radio" name="gender" value="female"></div>Female<br>
+
+            </div>
+            <div class="selections">
+                <strong>Membership length:</strong><br>
+                <select name="membership">
+                    <option value="1 month">1 month</option>
+                    <option value="6 month">6 months</option>
+                    <option value="1 year">1 year</option>
+                </select>
+
+            </div>
+            <div class="selections">
+                <strong>Marketing opt in:</strong><br>
+                <div class="choice"><input type="checkbox" name="mkt_email" value="true"></div>E-mail
+                <div class="choice"><input type="checkbox" name="phone" value="true"></div>Phone
+            </div>
+            <br>
+            <div class="button_area">
+                <input class="button" type="submit" value="Register">
+                <a href="index.html"><button type="button" class="button">Home</button></a>
+            </div>
+        </form>
+    </div>
+    
+</body>
+</html>

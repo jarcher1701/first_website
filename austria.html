@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Roboto" rel="stylesheet">
+    
+    <title>Holiday Locations</title>
+    
+    <style>
+        
+        body {
+            position: relative;
+            background-image: url(austria_bckgrnd.jpg);
+            background-position: top;
+            background-size: cover;
+            font-family: 'indie flower', cursive;
+            font-size: 14pt;
+            height: 100%;
+        }
+        
+        .nav_bar {
+            position: relative;
+            height: 40px;
+            font-family: inherit;
+            background-color: rgba(133, 138, 147, 0.7);
+            padding: 5px;            
+        }
+        
+        .nav_button_register, .nav_button_home {
+            width: 100px;
+            height: 30px;
+            font-family: inherit;
+            font-size: 14pt;
+            border-style: none;
+            background-color: white;
+            font-family: 'Roboto', sans-serif;
+        }
+        
+        .nav_button_register:hover, .nav_button_home:hover {
+            background-color: lightgray;
+        }
+        
+        .nav_button_home {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+        }
+        
+        .nav_button_register {
+            position: absolute;
+            top: 10px;
+            left: 120px;
+        }
+        
+        .country_area {
+            position: relative;
+        }
+        
+        .left_area, .right_area {
+            height: 555px;
+            margin-top: 10px;
+            padding: 10px;
+            border-radius: 5px;
+            background-color: white;
+            color: black;
+            overflow: scroll;
+        }
+        
+        .left_area {
+            position: absolute;
+            left: 0%;
+            width: 45%;
+            text-align: center;
+        }
+        
+        .right_area {
+            position: absolute;
+            width: 45%;
+            left: 50%;
+            text-align: center;
+        }
+        
+        .column_pic {
+            width: 95%;
+            height: 300px;
+        }
+        
+        
+    </style>
+</head>
+    
+    <body>
+
+        <div class=nav_bar>
+            <a href="register.html"><button class="nav_button_register">Register</button></a>
+            <a href="index.html"><button class="nav_button_home">Home</button></a>
+        </div>
+
+        <div class="country_area">
+            
+            <div class="left_area">
+                <p>Austria is a wonderful country to visit. From jawdropping mountains and expansive lakes to historic cities, Austria has it all.</p>
+                
+                <p>Austria offers the adventurous traveller many forms of transport from modern fast trains to trams or bikes. 
+                    
+                <p>Why not pack your hiking boots. Austria has a variety of official trails that crosscross the majestic landscape. Indeed, many visitors choose to hike from place to place.</p>
+                
+                <p>How will you explore this wonderful country?</p>
+                
+                <div><img src="hiker.jpg" class="column_pic"/></div>
+            </div>
+
+            <div class="right_area">
+                <img src="salzburg.jpg" class="column_pic"/>
+                
+                <p>If historical cities, with incredible architecture, are your thing, then you you will be spoilt for choice.</p>
+                
+                <p>One popular city destination is Salzburg. Its historic centre (Altstadt) is renowned for its baroque architecture and is one of the best-preserved city centres north of the Alps, with 27 churches. It was listed as a UNESCO World Heritage Site in 1996.</p>
+                
+                <p>Which city will be on the top of your list?</p>
+                
+                
+            </div>
+
+        </div>
+    
+    </body>
+    
+</html>
